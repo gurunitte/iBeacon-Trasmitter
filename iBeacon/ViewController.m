@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 static NSString * uuid = @"8CF62DF5-A317-4A90-B90D-2829D1D5985B";
-static NSString * treasureId = @"com.eden.treasure";
+static NSString * testId = @"com.test.beaconTest";
 static CLBeaconMajorValue majorID = 1;
 static CLBeaconMinorValue minorID = 1;
 
@@ -39,7 +39,7 @@ static CLBeaconMinorValue minorID = 1;
     self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uid
                                                                 major:majorID
                                                                 minor:minorID
-                                                           identifier:treasureId];
+                                                           identifier:testId];
     
     // When set to YES, the location manager sends beacon notifications when the user turns on
         // the display and the device is already inside the region.
